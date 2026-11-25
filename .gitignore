@@ -1,0 +1,10 @@
+bin/
+obj/
+publish/
+node_modules/
+src/mobile-web/dist/
+.vs/
+*.user
+*.suo
+*.db
+*.log

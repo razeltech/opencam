@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Assets\opencam.ico</ApplicationIcon>
+    <AssemblyName>OpenCam</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\opencam.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenCam.Core\OpenCam.Core.csproj" />
+    <ProjectReference Include="..\OpenCam.Storage\OpenCam.Storage.csproj" />
+    <ProjectReference Include="..\OpenCam.Security\OpenCam.Security.csproj" />
+    <ProjectReference Include="..\OpenCam.Server\OpenCam.Server.csproj" />
+    <ProjectReference Include="..\OpenCam.WebRTC\OpenCam.WebRTC.csproj" />
+    <ProjectReference Include="..\OpenCam.VirtualCamera\OpenCam.VirtualCamera.csproj" />
+  </ItemGroup>
+
+</Project>
